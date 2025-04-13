@@ -4,9 +4,16 @@ A complete machine learning case study using real-world customer behavioral data
 
 ---
 
-## Phase 1: Data Cleaning (ETL)
+## Data Source
 
-Original Dataset downloaded from [Kaggle (Rabie El Kharoua)](https://www.kaggle.com/datasets/rabieelkharoua/predict-customer-purchase-behavior-dataset)
+The dataset used in this project was publicly available on Kaggle:
+
+**Predict Customer Purchase Behavior Dataset**  
+Source: [Kaggle Dataset by Rabie El Kharoua](https://www.kaggle.com/datasets/rabieelkharoua/predict-customer-purchase-behavior-dataset)
+
+---
+
+## Phase 1: Data Cleaning (ETL)
 
 I began by importing the raw dataset and understanding its structure. After confirming that there were no missing values, I identified and converted several numerical columns to categorical types (e.g., `Gender`, `LoyaltyProgram`, `ProductCategory`, and `PurchaseStatus`). Finally, the cleaned dataset was saved for reuse in future steps.
 
@@ -17,7 +24,7 @@ I began by importing the raw dataset and understanding its structure. After conf
 
 ## Phase 2: Exploratory Data Analysis (EDA)
 
-In this phase, I performed univariate and bivariate analysis to explore patterns and relationships in the data.
+In this phase, I performed univariate and bivariate analyses to explore patterns and relationships in the data.
 
 ### Univariate Analysis:
 - **TimeSpentOnWebsite**: Slight positive trend; peak engagement near 45 minutes.
