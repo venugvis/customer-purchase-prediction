@@ -1,22 +1,6 @@
-# customer-purchase-prediction (Work in progress)
+# Predicting Customer Purchase Behavior | End-to-End ML Project
 
--  Proposed directory structure"
-
-customer-purchase-prediction/
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-├── src/
-├── README.md
-└── .gitignore
-
-
-# Customer Purchase Prediction
-
-This project predicts whether a customer will make a purchase based on their profile and online behavior.  
-
-It is structured end-to-end from data ingestion to model tuning and evaluation, and is designed as a portfolio-quality case study.
+A complete machine learning case study using real-world customer behavioral data. Covers ETL, EDA, feature engineering, model training, hyperparameter tuning (GridSearchCV), and performance evaluation. 
 
 ---
 
@@ -45,7 +29,7 @@ In this phase, I performed univariate and bivariate analysis to explore patterns
 - **AnnualIncome**: Purchasers had notably higher income.
 - **DiscountsAvailed**: Slightly more discounts used by purchasers.
 
-Notebook: [`02_exploratory_data_analysis.ipynb`](notebooks/02_exploratory_data_analysis.ipynb)
+**Notebook:** [`02_exploratory_data_analysis.ipynb`](notebooks/02_exploratory_data_analysis.ipynb)
 
 ---
 
@@ -68,4 +52,4 @@ This confirmed that the features were meaningful and the model generalized well.
 
 I would consider this version production-ready for business insights or deployment.
 
-Notebook: [`03_modeling_pipeline.ipynb`](notebooks/03_modeling_pipeline.ipynb)
+**Notebook:** [`03_modeling_pipeline.ipynb`](notebooks/03_modeling_pipeline.ipynb)
