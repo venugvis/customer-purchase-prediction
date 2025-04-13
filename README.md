@@ -6,6 +6,8 @@ A complete machine learning case study using real-world customer behavioral data
 
 ## Phase 1: Data Cleaning (ETL)
 
+Original Dataset downloaded from [Kaggle (Rabie El Kharoua)](https://www.kaggle.com/datasets/rabieelkharoua/predict-customer-purchase-behavior-dataset)
+
 I began by importing the raw dataset and understanding its structure. After confirming that there were no missing values, I identified and converted several numerical columns to categorical types (e.g., `Gender`, `LoyaltyProgram`, `ProductCategory`, and `PurchaseStatus`). Finally, the cleaned dataset was saved for reuse in future steps.
 
 **Notebook:** [`01_data_cleaning.ipynb`](notebooks/01_data_cleaning.ipynb)  
