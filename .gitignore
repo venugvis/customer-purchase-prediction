@@ -1,1 +1,8 @@
+# ignore the virtual environment folder
+venv/
 
+# also ignore any temporary or cache files
+__pycache__/
+.ipynb_checkpoints
+*.pyc
+.DS_Store
