@@ -25,3 +25,24 @@ We began by importing the raw dataset and understanding its structure. After con
 
 **Notebook:** [`01_data_cleaning.ipynb`](notebooks/01_data_cleaning.ipynb)  
 **Cleaned File:** `data/processed/cleaned_customer_data.csv`
+
+---
+
+## Phase 2: Exploratory Data Analysis (EDA)
+
+In this phase, I performed univariate and bivariate analysis to explore patterns and relationships in the data.
+
+### Univariate Analysis:
+- **TimeSpentOnWebsite**: Slight positive trend; peak engagement near 45 minutes.
+- **AnnualIncome**: Surprisingly balanced; no transformation needed.
+- **NumberOfPurchases**: Spike at 20 suggests a possible system cap.
+- **DiscountsAvailed**: Fairly even distribution across all bins.
+- **Age**: Bimodal pattern with peaks in younger and older ranges.
+
+### Bivariate Analysis (vs PurchaseStatus):
+- **TimeSpentOnWebsite**: Clear increase in median time for purchasers.
+- **AnnualIncome**: Purchasers had notably higher income.
+- **DiscountsAvailed**: Slightly more discounts used by purchasers.
+
+Notebook: [`02_exploratory_data_analysis.ipynb`](notebooks/02_exploratory_data_analysis.ipynb)
+
