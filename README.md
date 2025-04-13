@@ -15,13 +15,14 @@ customer-purchase-prediction/
 # Customer Purchase Prediction
 
 This project predicts whether a customer will make a purchase based on their profile and online behavior.  
+
 It is structured end-to-end from data ingestion to model tuning and evaluation, and is designed as a portfolio-quality case study.
 
 ---
 
 ## Phase 1: Data Cleaning (ETL)
 
-We began by importing the raw dataset and understanding its structure. After confirming that there were no missing values, we identified and converted several numerical columns to categorical types (e.g., `Gender`, `LoyaltyProgram`, `ProductCategory`, and `PurchaseStatus`). Finally, the cleaned dataset was saved for reuse in future steps.
+I began by importing the raw dataset and understanding its structure. After confirming that there were no missing values, I identified and converted several numerical columns to categorical types (e.g., `Gender`, `LoyaltyProgram`, `ProductCategory`, and `PurchaseStatus`). Finally, the cleaned dataset was saved for reuse in future steps.
 
 **Notebook:** [`01_data_cleaning.ipynb`](notebooks/01_data_cleaning.ipynb)  
 **Cleaned File:** `data/processed/cleaned_customer_data.csv`
@@ -46,3 +47,25 @@ In this phase, I performed univariate and bivariate analysis to explore patterns
 
 Notebook: [`02_exploratory_data_analysis.ipynb`](notebooks/02_exploratory_data_analysis.ipynb)
 
+---
+
+## Phase 3: Modeling and Evaluation
+
+After preparing the features and encoding categorical variables, I split the dataset and trained a baseline `RandomForestClassifier`.  
+The baseline model achieved:
+
+- **Accuracy**: 92%
+- **F1 Score (Purchase class)**: 0.90
+
+I then used **GridSearchCV** to optimize key hyperparameters such as `n_estimators`, `max_depth`, `min_samples_split`, and `min_samples_leaf`.  
+The tuned model improved performance further:
+
+- **Accuracy**: 93%
+- **F1 Score (Purchase class)**: 0.91
+- **Precision (Purchase class)**: 0.94
+
+This confirmed that the features were meaningful and the model generalized well.  
+
+I would consider this version production-ready for business insights or deployment.
+
+Notebook: [`03_modeling_pipeline.ipynb`](notebooks/03_modeling_pipeline.ipynb)
